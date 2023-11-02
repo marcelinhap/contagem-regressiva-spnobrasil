@@ -8,4 +8,4 @@ Usando as linguagens HTML, CSS e Javascript, desenvolvi uma contagem regressiva 
 
 </div>
 
-Você também pode ver a contagem regressiva funcionando no site [Simple Plan Brasil](https://simpleplan.com.br/).
+Você também pode ver a contagem regressiva funcionando no site [Simple Plan Brasil](https://simpleplan.com.br/) (apenas na versão desktop ainda).
