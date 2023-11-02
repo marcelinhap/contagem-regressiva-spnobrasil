@@ -1,0 +1,41 @@
+.contador{
+width: 1060px;
+height:38px;
+background-color: #363636;
+border-radius: 5px;
+text-align: center;
+}
+
+.numero
+{
+min-width: 40px;
+max-width: 60px;
+background-color: #FF0000;
+padding: 2px;
+margin: 2px;
+color: #363636;
+font-size: 16px;
+text-align: center;
+border-radius: 5px;
+display: inline-block
+}
+
+.legenda{
+height: 15px;
+line-height: 10px;
+font-size: 10px;
+color: #FF0000;
+text-align: center;
+display: inline-block
+}
+
+.texto{
+height: 15px;
+line-height: 10px;
+font-size: 16px;
+font-family: Helvetica Neue;
+font-weight:bold;
+color: #FF0000;
+text-align: left;
+display:inline-block;
+}

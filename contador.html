@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel=stylesheet type="text/css" href="design-contador.css">
+</head>
+<body>
+
+<script>
+var YY = 2024;
+var MM = 03;
+var DD = 02;
+var HH = 10;
+var MI = 00;
+var SS = 59; 
+
+var target_date = new Date(YY,MM-1,DD,HH,MI,SS);
+var dias, horas, minutos, segundos;
+var regressiva = document.getElementById("regressiva");
+
+setInterval(function () {
+
+    var current_date = new Date().getTime();
+    var segundos_f = (target_date - current_date) / 1000;
+
+	dias = parseInt(segundos_f / 86400);
+    segundos_f = segundos_f % 86400;
+    
+    horas = parseInt(segundos_f / 3600);
+    segundos_f = segundos_f % 3600;
+    
+    minutos = parseInt(segundos_f / 60);
+    segundos = parseInt(segundos_f % 60);
+
+    document.getElementById('dia').innerHTML = dias;
+	document.getElementById('hora').innerHTML = horas;
+	document.getElementById('minuto').innerHTML = minutos;
+	document.getElementById('segundo').innerHTML = segundos;
+  
+
+}, 1000);
+</script>
+
+<div class="contador">
+
+<p><tr style="height:20px"><td><p class="texto">Faltam</p></td></tr>
+
+<tr><td><p class="numero" id="dia"></p><p class="legenda">Dias</p></td>
+
+<td><p class="numero" id="hora"></p><p class="legenda">Horas</p></td>
+
+<td><p class="numero" id="minuto"></p><p class="legenda">Minutos</p></td>
+
+<td><p class="numero" id="segundo"></p><p class="legenda">Segundos</p></td>
+
+<tr style="height:50px"><td><p class="texto">para o #SPnoBrasil!</p></td></tr></p>
+
+</div>
+
+</body>
+</html>
